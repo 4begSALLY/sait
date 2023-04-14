@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Сайт для уроков</title>
+ <link rel="icon" href="\Users\Никита08\Desktop\Новая папка\images/xxc.jpg">
+
+ <meta charset="utf-8">
+ </head>
+<body>
+
+
+
+
+
+
+
+
+
+<img src="images/rast2.jpg" width="700" height="350" align="right">
+
+
+
+<div>
+<br>	
+<li><button class = "gradient-button" target="blank" onClick = "Russ()"><i><strong>Русский</strong></i></button>
+<input class="Do" class = "gradient-buttont" height="100"></li>
+<br>	
+<li><button class = "gradient-button" target="blank" onClick = "math()"><i><strong>алгебра</strong></i></button></li>
+<br>
+<li><button class = "gradient-button" target="blank" onClick = "geom()"><i><strong>геометрия</strong></i></button></li>
+<br>
+<li><button class = "gradient-button" target="blank" onClick = "ang()"><i><strong>english</strong></i></button></li>
+<br>
+</div>
+
+
+<script>
+ function Russ() {
+  let a = document.querySelector('.Do').value;
+  let r ="-nom";
+  let d =a + r;
+  let s = "https://gdz.ru/class-8/russkii_yazik/trostencova-8/";
+  let kt =s + d;
+   window.open(kt);
+  }
+
+function math() {
+  let j = document.querySelector('.Do').value;
+  let zo ="nomer-";
+  let po =zo + j;
+  let f = "https://gdz.ru/class-8/algebra/makarychev-8/";
+  let ko =f + po;
+   window.open(ko);
+  }
+
+  function geom() {
+  let x = document.querySelector('.Do').value;
+  let xx ="-task";
+  let xxx =x + xx;
+  let ss = "https://gdz.ru/class-8/geometria/atanasyan-8/";
+  let xxxx =ss + xxx;
+   window.open(xxxx);
+  }
+
+ function ang() {
+  let a = document.querySelector('.Do').value;
+  let r ="-s";
+  let d =a + r;
+  let s = "https://gdz.ru/class-8/english/kuzovlev-sb8/";
+  let kt =s + d;
+   window.open(kt);
+  }
+</script>
+
+
+
+<style>
+body 
+
+ 	{
+  height: 900px;
+  background: linear-gradient(#a8c0ff,#3f2b96);
+  background-repeat: repeat-x;
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: pink;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
+
+
+
+.gradient-buttont {
+ ...
+ margin-bottom: 24px;
+}
+.custom-field .error-message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 12px;
+  background: #d30909;
+  color: #fff;
+  height: 24px;
+}
+.custom-field .error-message:empty {
+  opacity: 0;
+}
+
+
+body 
+.animated-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #33ff33 inset, 0 0 0 0 #33ff33;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+}
+.animated-button:hover {
+  box-shadow: 0 0 10px 0 #33ff33 inset, 0 0 10px 4px #33ff33;
+  color: #ffffff;
+}
+</style>
+</body>
+</html>
